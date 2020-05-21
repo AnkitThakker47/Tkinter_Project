@@ -52,27 +52,28 @@ except Exception as e:
 	showerror("issue", e)
 
 
-root = Tk()
-root.title("Scraping images from pixabay")
-root.geometry("600x450+400+200")
-root.configure(background='#FF9196')
-root.resizable(False, False)
+if __name__ == '__main__':
+	root = Tk()
+	root.title("Scraping images from pixabay")
+	root.geometry("600x450+400+200")
+	root.configure(background='#FF9196')
+	root.resizable(False, False)
 
 
 
-lblwords = Label(root, text = "Enter the words for images to be searched", font = ('Arial', 18, 'bold'), bg = '#FF9196')
-lblinfo = Label(root, text = "(please enter keywords separated by space)", font = ('Arial', 18, 'bold'), bg = '#FF9196')
-getwords = Entry(root, width = 35,bd = 5, font = ('Arial', 18, 'bold'))
-btn = Button(root, text = "Search", font = ('Arial', 18, 'bold'), command = getImages)
+	lblwords = Label(root, text = "Enter the words for images to be searched", font = ('Arial', 18, 'bold'), bg = '#FF9196')
+	lblinfo = Label(root, text = "(please enter keywords separated by space)", font = ('Arial', 18, 'bold'), bg = '#FF9196')
+	getwords = Entry(root, width = 35,bd = 5, font = ('Arial', 18, 'bold'))
+	btn = Button(root, text = "Search", font = ('Arial', 18, 'bold'), command = getImages)
 
 
 
-lblwords.pack(pady = 20)
-lblinfo.pack()
-getwords.pack(pady = 20)
-btn.pack(pady = 20)
-getwords.focus()
+	lblwords.pack(pady = 20)
+	lblinfo.pack()
+	getwords.pack(pady = 20)
+	btn.pack(pady = 20)
+	getwords.focus()
 
 
 
-root.mainloop()
+	root.mainloop()
