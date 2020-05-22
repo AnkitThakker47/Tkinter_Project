@@ -7,7 +7,7 @@ from tkinter.messagebox import *
 
 
 try:
-	socket.create_connection(("www.google.com",80))
+	#socket.create_connection(("www.google.com",80))
 	#showinfo("Connected","u r connected")
 
 
@@ -51,8 +51,8 @@ try:
 except Exception as e:
 	showerror("issue", e)
 
-
 if __name__ == '__main__':
+
 	root = Tk()
 	root.title("Scraping images from pixabay")
 	root.geometry("600x450+400+200")
