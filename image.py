@@ -7,7 +7,7 @@ from tkinter.messagebox import *
 
 
 try:
-	#socket.create_connection(("www.google.com",80))
+	socket.create_connection(("www.google.com",80))
 	#showinfo("Connected","u r connected")
 
 
